@@ -2,13 +2,14 @@ package com.dio.personapi.entity;
 
 import com.dio.personapi.enums.PhoneType;
 import lombok.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 
 @Entity
 @Data
 @Builder
-@AllArgsConstructor
+@AllArgsConstructor(onConstructor = @__(@Autowired))
 @NoArgsConstructor
 public class Phone {
 
